@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "@fontsource/roboto";
+import { ChakraProvider, Container, VStack } from "@chakra-ui/react";
+import { Router } from "./router/Router";
 
-function App() {
+import theme from "./theme/index";
+import GlobalState from "./global/GlobalSate";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ChakraProvider theme={theme}>
+      <Container p={0}>
+        <GlobalState>
+          <Router />
+        </GlobalState>
+      </Container>
+    </ChakraProvider>
   );
-}
+};
 
 export default App;
