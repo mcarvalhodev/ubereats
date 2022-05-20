@@ -2,6 +2,7 @@ import { Container, Flex, Image } from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
 import Navigator from "../../router/Navigator";
+import uberEatsLogo from '../../assets/uber-eats-logo.png'
 
 const HomePage = () => {
   const navigateTo = new Navigator();
@@ -21,10 +22,9 @@ const HomePage = () => {
     <Container bg={"#000000"} h="100vh">
       <Flex justify={"center"} align={"center"} h="full">
         <Image
-          src={require("../../assets/logo-future-eats.png")}
-          alt="Logo Future Eats"
-          w={"126px"}
-          h={"65px"}
+          src={uberEatsLogo}
+          alt="Logo Future Eats" 
+          w="50%"        
         />
       </Flex>
     </Container>

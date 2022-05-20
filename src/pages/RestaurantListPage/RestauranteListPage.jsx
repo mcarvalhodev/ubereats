@@ -48,12 +48,8 @@ const RestauranteListPage = () => {
             <Tab>Mexicana</Tab>
           </TabList>
           <TabPanels>
-            <TabPanel>
-              <p>one!</p>
-            </TabPanel>
-            <TabPanel>
-              <p>two!</p>
-            </TabPanel>
+            <TabPanel></TabPanel>
+            <TabPanel></TabPanel>
           </TabPanels>
         </Tabs>
       </HStack>
