@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { Field, Form, Formik } from "formik";
 import React from "react";
-import logo from "../../assets/logo-future-eats-invert.png";
+import logo from "../../assets/uber-eats-logo-0.png";
 import * as Yup from "yup";
 import Label from "../../components/Label/Label";
 import Client from "../../services/Client";
@@ -31,7 +31,7 @@ const SignupSchema = Yup.object().shape({
 const SignUpPage = () => {
   const navigate = new Navigator();
   const api = new Client();
-  
+
   const onClickSubmit = (values, actions) => {
     api
       .signup(values)
@@ -51,7 +51,7 @@ const SignUpPage = () => {
   return (
     <Container maxW="container.xl" p={0}>
       <VStack w="full" h="100vh" p={5} spacing={10} justify="center">
-        <Image src={logo} alt="Dan Abramov" />
+        <Image src={logo} alt="Dan Abramov" w="30%" />
         <Text fontWeight={"bold"} fontSize="md">
           Cadastrar
         </Text>

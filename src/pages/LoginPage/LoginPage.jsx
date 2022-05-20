@@ -11,13 +11,13 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo-future-eats-invert.png";
+import logo from "../../assets/uber-eats-logo-0.png";
 
 const LoginPage = () => {
   return (
     <Container maxW="container.xl" p={0}>
       <VStack w="full" h="100vh" p={5} spacing={10} justify="center">
-        <Image src={logo} alt="Dan Abramov" />
+        <Image src={logo} alt="Dan Abramov" w="30%" />
         <Text fontWeight={"bold"} fontSize="md">
           Entrar
         </Text>
